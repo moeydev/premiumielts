@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>IELTS Speaking Specialist — Premium Coaching</title>
+  <meta name="description" content="Premium one-to-one IELTS Speaking coaching. Proven 4C™ framework, limited spots, strategy session booking." />
+
+  <!-- Open Graph (helps link previews) -->
+  <meta property="og:title" content="IELTS Speaking Specialist — Premium Coaching" />
+  <meta property="og:description" content="Premium one-to-one IELTS Speaking coaching. Proven 4C™ framework, limited spots, strategy session booking." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg: #071028; /* deep navy */
+      --card: #09172b;
+      --muted: #9fb3c8;
+      --gold: #d4af37;
+      --gold-opaque: rgba(212,175,55,0.12);
+      --white: #f7fafc;
+      --radius: 14px;
+      --max-width: 1100px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;
+      background:linear-gradient(180deg,var(--bg) 0%, #031226 100%);
+      color:var(--white);
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    .container{
+      width:100%;
+      max-width:var(--max-width);
+      margin:0 auto;
+      padding:48px 28px;
+    }
+
+    header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+      margin-bottom:28px;
+    }
+    .brand{
+      display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--white)
+    }
+    .logo{
+      width:54px;height:54px;border-radius:12px;background:linear-gradient(135deg,var(--gold) 0%, #b6912a 100%);display:flex;align-items:center;justify-content:center;color:#071028;font-weight:700;font-family:'Playfair Display', serif;font-size:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6)
+    }
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+
+    /* HERO */
+    .hero{
+      display:grid;
+      grid-template-columns:1fr 420px;
+      gap:36px;
+      align-items:center;
+      margin-bottom:48px;
+    }
+
+    .hero .eyebrow{color:var(--gold);font-weight:700;letter-spacing:0.6px}
+    h1{
+      margin:8px 0 12px 0;font-family:'Playfair Display', serif;font-weight:700;font-size:40px;color:var(--white);line-height:1.02
+    }
+    p.lead{color:var(--muted);font-size:16px;margin:0 0 22px 0}
+
+    .cta-row{display:flex;gap:14px;align-items:center}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:14px 18px;border-radius:10px;border:0;cursor:pointer;font-weight:700;text-decoration:none
+    }
+    .btn-primary{background:linear-gradient(90deg,var(--gold) 0%, #b8912a 100%);color:#071826;box-shadow:0 8px 30px rgba(212,175,55,0.16)}
+    .btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--white)}
+
+    .hero-card{
+      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:var(--radius);padding:22px;box-shadow:0 10px 30px rgba(2,6,23,0.6);
+      border:1px solid rgba(255,255,255,0.03);
+    }
+    .profile{
+      display:flex;gap:14px;align-items:center
+    }
+    .photo{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,#0c2944,#053047);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:24px}
+    .meta small{display:block;color:var(--muted)}
+
+    /* sections */
+    section{padding:36px 0;border-top:1px solid rgba(255,255,255,0.02)}
+    .section-head{display:flex;align-items:end;gap:14px}
+    .section-head h2{font-family:'Playfair Display', serif;margin:0;font-size:22px}
+    .section-head p{margin:0;color:var(--muted);font-size:14px}
+
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+    .card{background:var(--card);padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .muted{color:var(--muted)}
+
+    /* 4C framework styling */
+    .framework{display:flex;flex-direction:column;gap:12px;margin-top:18px}
+    .pill{display:inline-flex;padding:8px 12px;border-radius:999px;background:var(--gold-opaque);color:var(--gold);font-weight:700}
+
+    /* testimonials */
+    .testimonials{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
+    .quote{font-style:italic;color:var(--white);line-height:1.4}
+    .score-badge{display:inline-block;padding:10px 12px;border-radius:10px;background:rgba(255,255,255,0.04);font-weight:700}
+
+    /* offer */
+    .offer-split{display:grid;grid-template-columns:1fr 360px;gap:22px;align-items:start}
+    .offer-list{list-style:none;padding:0;margin:0}
+    .offer-list li{padding:8px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
+
+    footer{padding:22px 0;text-align:center;color:var(--muted);font-size:14px}
+
+    /* responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .offer-split{grid-template-columns:1fr}
+      .testimonials{grid-template-columns:1fr}
+      .grid-3{grid-template-columns:1fr}
+    }
+
+    @media (max-width:420px){
+      h1{font-size:28px}
+      .logo{width:46px;height:46px;font-size:16px}
+    }
+
+    /* subtle animations */
+    .fade-up{opacity:0;transform:translateY(12px);animation:fadeUp .7s ease forwards}
+    @keyframes fadeUp{to{opacity:1;transform:none}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="#">
+        <div class="logo">MO</div>
+        <div>
+          <div style="font-weight:700">IELTS Speaking Specialist</div>
+          <div style="font-size:12px;color:var(--muted)">Premium one-to-one coaching</div>
+        </div>
+      </a>
+
+      <nav aria-label="Primary navigation">
+        <a href="#results">Results</a>
+        <a href="#method">Method</a>
+        <a href="#book" class="btn btn-ghost" style="padding:10px 14px;border-radius:10px">Book Strategy Session</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <main class="hero" role="main">
+      <div class="fade-up">
+        <div class="eyebrow">Exclusive · Limited</div>
+        <h1>Achieve Band 7+ in IELTS Speaking — Guided by a Certified Specialist</h1>
+        <p class="lead">One-to-one, evidence-backed preparation focused exclusively on Speaking. Transform your fluency, lexical resource and confidence with a proven framework used by high achievers.</p>
+
+        <div class="cta-row">
+          <a href="#book" class="btn btn-primary">Book Your Strategy Session</a>
+          <a href="#results" class="btn btn-ghost">View Success Stories</a>
+        </div>
+
+        <div style="margin-top:22px;color:var(--muted);font-size:14px">Spots limited to maintain quality. Remote coaching — worldwide availability.</div>
+      </div>
+
+      <aside class="hero-card fade-up" aria-label="Coach profile">
+        <div class="profile">
+          <div class="photo">MO</div>
+          <div class="meta">
+            <div style="font-weight:700">MOEY — IELTS Speaking Specialist</div>
+            <small>Certified IELTS trainer · 500+ candidates coached</small>
+          </div>
+        </div>
+
+        <div style="margin-top:16px;color:var(--muted);font-size:14px">
+          <strong>Signature:</strong> <span class="muted">The 4C™ Speaking Mastery Framework</span>
+        </div>
+
+        <div style="margin-top:14px;display:flex;gap:10px">
+          <div class="score-badge">+1 Band (avg)</div>
+          <div class="score-badge">75% Band 7.5+</div>
+        </div>
+
+        <div style="margin-top:16px;display:flex;gap:8px">
+          <a href="#book" class="btn btn-primary" style="flex:1">Book Strategy Session</a>
+          <a href="mailto:you@domain.com" class="btn btn-ghost">Contact</a>
+        </div>
+      </aside>
+    </main>
+
+    <!-- AUTHORITY -->
+    <section id="method">
+      <div class="section-head">
+        <div>
+          <h2>Why elite candidates choose this coaching</h2>
+          <p class="muted">High-impact, measurable training tailored for top band outcomes.</p>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <div class="card fade-up">
+          <strong>Exam-accurate feedback</strong>
+          <div class="muted" style="margin-top:8px">Mock interviews scored using official band descriptors with timestamped corrections.</div>
+        </div>
+        <div class="card fade-up">
+          <strong>Personalized vocabulary strategy</strong>
+          <div class="muted" style="margin-top:8px">Targeted lexical clusters & idioms that elevate Band descriptors without sounding forced.</div>
+        </div>
+        <div class="card fade-up">
+          <strong>Pronunciation & prosody</strong>
+          <div class="muted" style="margin-top:8px">Micro-practice for clear, natural intonation — critical for higher bands.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FRAMEWORK -->
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>The 4C™ Speaking Mastery Framework</h2>
+          <p class="muted">A tightly-focused process that produces consistent, exam-ready performance.</p>
+        </div>
+      </div>
+
+      <div class="framework">
+        <div class="card">
+          <div class="pill">Clarity</div>
+          <p class="muted" style="margin-top:8px">Precision in pronunciation and intelligibility so examiners hear what you mean — first time.</p>
+        </div>
+        <div class="card">
+          <div class="pill">Coherence</div>
+          <p class="muted" style="margin-top:8px">Structuring responses into clear beginnings, development and endings for logical flow.</p>
+        </div>
+        <div class="card">
+          <div class="pill">Confidence</div>
+          <p class="muted" style="margin-top:8px">Exam-ready delivery, voice control and pacing to reduce hesitation and improve fluency.</p>
+        </div>
+        <div class="card">
+          <div class="pill">Consistency</div>
+          <p class="muted" style="margin-top:8px">Sustaining high performance across all parts of the Speaking test under time pressure.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESULTS -->
+    <section id="results">
+      <div class="section-head">
+        <div>
+          <h2>Success Stories</h2>
+          <p class="muted">Real improvements. Measured, recorded and repeatable.</p>
+        </div>
+      </div>
+
+      <div class="testimonials">
+        <div class="card">
+          <div class="quote">“I went from 6.5 to 8.0 in 5 weeks with MO’s structured mocks and feedback. The approach is surgical — it fixed the exact issues I had.”</div>
+          <div style="margin-top:12px;font-weight:700">Sofia, Spain — Band 8.0</div>
+        </div>
+
+        <div class="card">
+          <div class="quote">“Detailed pronunciation coaching and vocabulary that actually fits my responses. Confident on test day — I scored 7.5.”</div>
+          <div style="margin-top:12px;font-weight:700">Arjun, India — Band 7.5</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFFER -->
+    <section>
+      <div class="section-head">
+        <div>
+          <h2>Your Speaking Upgrade</h2>
+          <p class="muted">Limited premium places — tailored for ambitious candidates.</p>
+        </div>
+      </div>
+
+      <div class="offer-split">
+        <div>
+          <p class="muted">What the premium program includes:</p>
+          <ul class="offer-list muted" style="margin-top:12px">
+            <li>Initial diagnostic interview & recorded speaking analysis</li>
+            <li>Weekly one-to-one mocks with timestamped feedback</li>
+            <li>Custom vocabulary & collocation packs</li>
+            <li>Pronunciation clinics and micro-practice</li>
+            <li>Performance tracking & band target plan</li>
+          </ul>
+
+          <div style="margin-top:18px;color:var(--muted)">Pricing is by consultation — book a strategy session to receive a bespoke program and investment guide.</div>
+
+          <div style="margin-top:20px">
+            <a href="#book" class="btn btn-primary">Book Strategy Session</a>
+            <a href="mailto:you@domain.com" class="btn btn-ghost">Request Prospectus</a>
+          </div>
+        </div>
+
+        <aside class="card" style="align-self:start">
+          <div style="font-weight:700;font-size:20px">Limited Availability</div>
+          <div class="muted" style="margin-top:8px">To ensure a high-touch experience, only 10 private coaching spots are opened each month.</div>
+
+          <div style="margin-top:14px;display:flex;gap:10px">
+            <div style="flex:1;background:rgba(212,175,55,0.06);padding:10px;border-radius:8px;text-align:center">
+              <div style="font-weight:700">92%</div>
+              <div class="muted" style="font-size:13px">Students +1 band (avg)</div>
+            </div>
+            <div style="flex:1;background:rgba(255,255,255,0.02);padding:10px;border-radius:8px;text-align:center">
+              <div style="font-weight:700">75%</div>
+              <div class="muted" style="font-size:13px">Reach 7.5+</div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- BOOKING (anchor) -->
+    <section id="book">
+      <div class="section-head">
+        <div>
+          <h2>Book Your Strategy Session</h2>
+          <p class="muted">A focused 20–30 minute call to diagnose your current level and propose a bespoke plan.</p>
+        </div>
+      </div>
+
+      <div class="card" style="margin-top:18px;display:flex;gap:12px;align-items:center;flex-direction:column;text-align:center">
+        <div style="max-width:680px">
+          <p style="margin:0 0 12px 0">Choose a time that suits you. If you prefer, email <a href="mailto:you@domain.com" style="color:var(--gold)">you@domain.com</a> with your preferred dates and test target.</p>
+        </div>
+
+        <!-- Placeholder booking button; replace with Calendly/Form integration -->
+        <div style="display:flex;gap:10px">
+          <a class="btn btn-primary" href="#">Schedule via Calendly</a>
+          <a class="btn btn-ghost" href="mailto:you@domain.com">Email to Book</a>
+        </div>
+
+        <small class="muted" style="margin-top:8px">If you use Calendly, replace the Schedule button link with your scheduling URL.</small>
+      </div>
+    </section>
+
+    <footer>
+      <div style="max-width:900px;margin:18px auto 0 auto">
+        <div style="display:flex;align-items:center;justify-content:center;gap:16px">
+          <div class="muted">© <span id="year"></span> IELTS Speaking Specialist</div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // small script: update year & simple fade on load
+    document.getElementById('year').textContent = new Date().getFullYear();
+    window.addEventListener('load', ()=>{
+      document.querySelectorAll('.fade-up').forEach((el,i)=>{
+        el.style.animationDelay = (i*120)+'ms';
+      });
+    });
+  </script>
+</body>
+</html>
